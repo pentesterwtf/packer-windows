@@ -31,7 +31,7 @@
       "winrm_username": "vagrant",
       "winrm_password": "vagrant",
       "winrm_insecure": "true",
-      "winrm_use_ssl": "false",
+      "winrm_use_ssl": "true",
       "winrm_timeout": "120m",
       "floppy_files": [
         "{{user `autounattend`}}",
