@@ -5,7 +5,7 @@ mkdir C:\Windows\SoftwareDistribution\Download
 net start wuauserv
 
 REM Remove hibernation file
-powercfg /h /off 
+powercfg /h off 
 
 REM Shrink winsxs folder
 Dism.exe /online /Cleanup-Image /StartComponentCleanup /ResetBase
