@@ -42,9 +42,10 @@
         "./scripts/install-misc.bat",
         "./scripts/redhat-cert.cer",
         "./scripts/enable-winrm.ps1",
+        "./answer_files/Firstboot/Firstboot-Autounattend.xml",
         "./drivers/"
       ],
-      "shutdown_command": "shutdown /s /t 10 /f /d p:4:1 /c \"Packer Shutdown\"",
+      "shutdown_command": "%WINDIR%/system32/sysprep/sysprep.exe /generalize /oobe /shutdown /unattend:C:/Windows/Temp/Autounattend.xml",
       "qemuargs": [
         ["--cpu", "host"],
         ["-vga", "qxl"]

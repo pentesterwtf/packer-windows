@@ -2,6 +2,11 @@
 
 Builds Win10 (latest) and Server 2019 (Latest)
 
+This will sysprep on first boot after packaging. This can be changed by modifying the shutdown command back to the following:
+
+```
+"shutdown_command": "shutdown /s /t 10 /f /d p:4:1 /c \"Packer Shutdown\""
+```
 
 ## Prereqs
 
