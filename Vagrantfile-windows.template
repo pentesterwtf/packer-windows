@@ -14,6 +14,7 @@ Vagrant.configure("2") do |config|
     libvirt.random :model => 'random'
     libvirt.memory = 2048
     libvirt.cpus = 2
+    ibvirt.input :type => "tablet", :bus => "usb"
   end
 
   # Port forward for RDP
