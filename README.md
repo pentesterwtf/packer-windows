@@ -22,3 +22,7 @@ This will sysprep on first boot after packaging. This can be changed by modifyin
 ### Server 2019
 
 `packer build -var="name=windows_server_2019" -var "autounattend=./answer_files/2019/Autounattend.xml" -var="iso_checksum=645477fc661703f537a112cf1a84ea655e281082" -var="iso_url=https://software-download.microsoft.com/download/sg/17763.253.190108-0006.rs5_release_svc_refresh_SERVER_EVAL_x64FRE_en-us.iso" windows.json`
+
+## Building faster
+
+* Comment out everything in `compact.bat` - you'll save about 10-20 minutes on build time
