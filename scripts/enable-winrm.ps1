@@ -457,6 +457,10 @@ Else
 Write-VerboseLog "PS Remoting has been successfully configured for Ansible."
 
 
+# enable WINRM 5985
+netsh advfirewall firewall set rule name="Windows Remote Management (HTTP-In)" new profile=any enable=yes
+
+# Enable SSH
 Add-WindowsCapability -Online -Name OpenSSH.Server~~~~0.0.1.0
 Start-Service sshd
 Set-Service -Name sshd -StartupType 'Automatic'
