@@ -38,7 +38,8 @@
         "./scripts/fixnetwork.ps1",
         "./scripts/microsoft-updates.bat",
         "./scripts/win-updates.ps1",
-        "./scripts/install-misc.ps1",
+        "./scripts/install-choco.ps1",
+        "./scripts/install-misc.bat",
         "./scripts/redhat-cert.cer",
         "./scripts/enable-winrm.ps1",
         "./drivers/"
@@ -59,6 +60,7 @@
         "./scripts/disable-auto-logon.bat",
         "./scripts/enable-rdp.bat",
         "./scripts/compile-dotnet-assemblies.bat",
+        "./scripts/install-misc.bat",
         "./scripts/compact.bat"
       ]
     }
