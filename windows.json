@@ -26,6 +26,7 @@
       "boot_wait": "5s",
       "format": "qcow2",
       "disk_size": "{{user `disk_size`}}",
+      "disk_compression": "true",
       "net_device": "virtio-net",
       "disk_interface": "virtio",
       "communicator": "winrm",
