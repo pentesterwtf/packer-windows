@@ -8,7 +8,8 @@
     "cpus": "4",
     "vm_name": "windows_10",
     "headless": "true",
-    "autounattend": "./answer_files/10/Autounattend.xml"
+    "autounattend": "./answer_files/10/Autounattend.xml",
+    "qemu_binary": "qemu-system-x86_64"
   },
   "builders": [
     {
@@ -19,6 +20,7 @@
       "iso_checksum": "{{user `iso_checksum`}}",
       "headless": "{{user `headless`}}",
       "cpus": "{{ user `cpus`}}",
+      "qemu_binary": "{{ user `qemu_binary`}}",
       "memory": "{{ user `memory_size`}}",
       "boot_wait": "5s",
       "format": "qcow2",
