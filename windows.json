@@ -9,7 +9,8 @@
     "vm_name": "windows_10",
     "headless": "true",
     "autounattend": "./answer_files/10/Autounattend.xml",
-    "qemu_binary": "qemu-system-x86_64"
+    "qemu_binary": "qemu-system-x86_64",
+    "shutdown_command": "%WINDIR%/system32/sysprep/sysprep.exe /generalize /oobe /shutdown /unattend:C:/Windows/Temp/Autounattend.xml"
   },
   "builders": [
     {
@@ -45,7 +46,7 @@
         "./answer_files/Firstboot/Firstboot-Autounattend.xml",
         "./drivers/"
       ],
-      "shutdown_command": "%WINDIR%/system32/sysprep/sysprep.exe /generalize /oobe /shutdown /unattend:C:/Windows/Temp/Autounattend.xml",
+      "shutdown_command": "{{ user `shutdown_command` }}",
       "qemuargs": [
         ["--cpu", "host"],
         ["-vga", "qxl"]
