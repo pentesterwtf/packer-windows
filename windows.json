@@ -68,7 +68,6 @@
   "post-processors": [
     {
       "type": "vagrant",
-      "keep_input_artifact": false,
       "output": "builds/{{user `vm_name`}}.box",
       "vagrantfile_template": "Vagrantfile-windows.template",
       "keep_input_artifact": true

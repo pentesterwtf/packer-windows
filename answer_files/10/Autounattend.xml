@@ -179,11 +179,6 @@
 		    <Description>Install choco </Description>
                 </SynchronousCommand>
                 <SynchronousCommand wcm:action="add">
-                    <CommandLine>cmd.exe /c choco install virtio-drivers -y</CommandLine>
-                    <Order>25</Order>
-		    <Description>Choco install virtio-drivers</Description>
-                </SynchronousCommand>
-                <SynchronousCommand wcm:action="add">
                     <CommandLine>cmd.exe /c a:\microsoft-updates.bat</CommandLine>
                     <Order>98</Order>
                     <Description>Enable Microsoft Updates</Description>
