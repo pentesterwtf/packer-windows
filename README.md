@@ -27,10 +27,3 @@ This will sysprep on first boot after packaging. This can be changed by modifyin
 
 * Comment out everything in `compact.bat` - you'll save about 10-20 minutes on build time
 
-### winrm/ssh
-
-* Both winrm and Microsoft's implementation of ssh are installed
-* Vagrant now has support for 'winssh' - https://www.vagrantup.com/docs/vagrantfile/winssh_settings.html
-* Either will work for auth
-* This might help if you're on Fedora, using Vagrant and the libvirt provider bundled by Fedora as a workaround to other bugs, but are unable to install winrm due to miscallenous issues
-
