@@ -25,8 +25,8 @@
       "boot_wait": "5s",
       "format": "qcow2",
       "disk_size": "{{user `disk_size`}}",
-      "net_device": "e1000",
-      "disk_interface": "ide",
+      "net_device": "virtio-net",
+      "disk_interface": "virtio",
       "communicator": "winrm",
       "winrm_username": "vagrant",
       "winrm_password": "vagrant",
@@ -40,7 +40,8 @@
         "./scripts/win-updates.ps1",
         "./scripts/install-misc.ps1",
         "./scripts/redhat-cert.cer",
-        "./scripts/enable-winrm.ps1"
+        "./scripts/enable-winrm.ps1",
+        "./drivers/"
       ],
       "shutdown_command": "shutdown /s /t 10 /f /d p:4:1 /c \"Packer Shutdown\"",
       "qemuargs": [
