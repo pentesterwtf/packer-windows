@@ -38,6 +38,8 @@
         "./scripts/fixnetwork.ps1",
         "./scripts/microsoft-updates.bat",
         "./scripts/win-updates.ps1",
+        "./scripts/install-misc.ps1",
+        "./scripts/redhat-cert.cer",
         "./scripts/enable-winrm.ps1"
       ],
       "shutdown_command": "shutdown /s /t 10 /f /d p:4:1 /c \"Packer Shutdown\"",
