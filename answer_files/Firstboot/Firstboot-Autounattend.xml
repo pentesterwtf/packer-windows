@@ -48,12 +48,6 @@
             <SystemLocale>en-US</SystemLocale>
             <UILanguage>en-US</UILanguage>
             <UserLocale>en-AU</UserLocale>
-            <UserAccounts>
-                <AdministratorPassword>
-                    <Value>Vagrant1</Value>
-                    <PlainText>true</PlainText>
-                </AdministratorPassword>
-            </UserAccounts>
         </component>
     </settings>
 </unattend>

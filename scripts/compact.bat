@@ -16,5 +16,4 @@ choco install sdelete -y
 REM zerofill disk for easy shrinking and compression
 sdelete.exe /accepteula -z c:
 
-REM sysprep
-REM %WINDIR%\system32\sysprep\sysprep.exe /generalize /quit /oobe
+REM compaction finished
