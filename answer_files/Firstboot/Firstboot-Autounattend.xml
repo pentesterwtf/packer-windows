@@ -38,9 +38,13 @@
             <Computername>*</Computername>
             <OOBE>
                 <HideEULAPage>true</HideEULAPage>
-                <NetworkLocation>Other</NetworkLocation>
+                <NetworkLocation>Work</NetworkLocation>
                 <ProtectYourPC>2</ProtectYourPC>
                 <SkipUserOOBE>true</SkipUserOOBE>
+                <SkipMachineOOBE>true</SkipMachineOOBE>
+		        <HideOEMRegistrationScreen>true</HideOEMRegistrationScreen>
+		        <HideOnlineAccountScreens>true</HideOnlineAccountScreens>
+                <HideWirelessSetupInOOBE>true</HideWirelessSetupInOOBE>
             </OOBE>
         </component>
     </settings>
