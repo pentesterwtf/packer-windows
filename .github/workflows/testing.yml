@@ -1,0 +1,16 @@
+---
+name: Packer
+on:
+  push:
+  schedule:
+    # Run it daily
+    - cron: '0 0 * * *'
+jobs:
+  packer:
+    runs-on: ubuntu-latest
+    name: packer
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+      - name: Validate
+        run: packer validate packer.json 
