@@ -1,3 +1,6 @@
 packer_cache/
 builds/
 output-qemu
+build.hwm
+build.pwd
+build.pwi
