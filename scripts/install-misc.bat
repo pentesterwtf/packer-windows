@@ -7,3 +7,6 @@ REM Copy our sysprep Autounattend for our post-packer first boot
 copy "A:/Firstboot-Autounattend.xml" "C:/Windows/Temp/Autounattend.xml"
 REM Copy the enable-winrm script, relied on by our post-packer autounattend script
 copy "A:/enable-winrm.ps1" "C:/Windows/Temp/enable-winrm.ps1"
+
+REM Install dotnetfx
+choco install dotnetfx -y
