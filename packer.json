@@ -16,6 +16,7 @@
         "./scripts/install-choco.ps1",
         "./scripts/install-misc.bat",
         "./scripts/redhat-cert.cer",
+        "./scripts/redhat-cert-old.cer",
         "./scripts/enable-winrm.ps1",
         "./answer_files/Firstboot/Firstboot-Autounattend.xml",
         "./drivers/"

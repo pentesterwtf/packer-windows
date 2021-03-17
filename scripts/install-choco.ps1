@@ -3,6 +3,8 @@
 
 # Install redhat cert for trust
 certutil -addstore -f "TrustedPublisher" a:/redhat-cert.cer
+# Install the old redhat cert, used for most of their kvm drivers
+certutil -addstore -f "TrustedPublisher" a:/redhat-cert-old.cer
 
 # Install chocolatey
 cmd /c C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))"
