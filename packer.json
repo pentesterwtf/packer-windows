@@ -26,7 +26,6 @@
       "iso_checksum": "{{user `iso_checksum_type`}}:{{user `iso_checksum`}}",
       "iso_url": "{{user `iso_url`}}",
       "memory": "{{ user `memory_size`}}",
-      "iso_checksum_type": "{{ user `iso_checksum_type`}}",
       "net_device": "virtio-net",
       "qemuargs": [
         [
